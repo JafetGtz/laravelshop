@@ -15,12 +15,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/prueba', function () {
-    return 'hola soy una ruta prueba';
-});
-
-Route::get('user', 'TestController@welcome');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
